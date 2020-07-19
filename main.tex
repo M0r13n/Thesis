@@ -4,7 +4,10 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 %Setzen des Dokumententyps
-\documentclass[12pt,a4paper]{article}
+\documentclass[
+    12pt,
+    a4paper,
+]{article}
 
 %Einbinden der nötigen Pakete, hier gilt eigentlich FINGER WEG! Sprache wird allerdings in dieser Datei umgestellt bei Babel
 \include{./subdocs/packages}
@@ -27,17 +30,7 @@
 \newpage
 
 %Abkürzungen
-\section*{Abkürzungsverzeichnis}
-\begin{acronym}[Bash]
- \acro{KDE}{K Desktop Environment}
- \acro{SQL}{Structured Query Language}
- \acro{Bash}{Bourne-again shell}
- \acro{JDK}{Java Development Kit}
- \acro{VM}{Virtuelle Maschine}
- \acro{I2C}[I²C]{Inter-Integrated Circuit}
-\end{acronym}
-\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
-\clearpage
+\input{./subdocs/shortcuts}
 
 %Zurück zur arabischen Seitennummerierung
 \pagenumbering{arabic}
@@ -58,6 +51,7 @@
 %\include{./subdocs/kapitel10}
 %Seitenumbruch für die folgende Bibliografie
 \clearpage
+
 %%Bibliografie, bitte richtigen Bib-Dateinamen eintragen
 \bibliography{./subdocs/biblio}
 \bibliographystyle{apacite}
@@ -67,16 +61,16 @@
 \include{./subdocs/appendixA}
 %\include{./subdocs/appendixB}
 \addcontentsline{toc}{section}{Appendix}
-\newpage
+%\newpage
 
 %Index falls gewünscht. Nicht vergessen den <Index Befehl> laufen zu lassen, ansonsten die folgenden Zeilen mit % auskommentieren bis end
 % Index soll Stichwortverzeichnis heissen
-\renewcommand{\indexname}{Stichwortverzeichnis} 
+%\renewcommand{\indexname}{Stichwortverzeichnis} 
 %Achtung bei englischer Dokumentsprache
 
 % Stichwortverzeichnis soll im Inhaltsverzeichnis auftauchen
 %\addcontentsline{toc}{section}{Stichwortverzeichnis}
-\newpage
+%\newpage
 % Ausgabe des Index
-\printindex
+%\printindex
 \end{document}

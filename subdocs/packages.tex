@@ -1,20 +1,6 @@
 \usepackage[a4paper,left=35mm,width=145mm,top=20mm]{geometry}
 %Automatische Verzeichnisse ins Inhaltsverzeichnis
 \usepackage{tocbibind}
-%	\renewcommand{\tableofcontents}{\begingroup
-%		\tocsection
-%		\tocchapter
-%		\tocfile{\contentsname}{toc}
-%	\endgroup}
-%	\renewcommand{\listoffigures}{\begingroup
-%    	\tocsection
-%        \tocchapter
-%    	\tocfile{\listfigurename}{lof}
-% 	\endgroup}
-%	\renewcommand{\listoftables}{\begingroup
-%    	\tocsection
-%    	\tocfile{\listtablename}{lot}
-% 	\endgroup}
 
 \usepackage[utf8]{inputenc} % Kodierung
 \usepackage[ngerman]{babel} % deutsche Sprache
@@ -22,17 +8,17 @@
 %Verwendete Schrift z.B. lmodern
 %\usepackage{lmodern}
 %\usepackage{libertine}
+\usepackage{mathptmx} % Für Times New Roman Font
 %\usepackage{mathpazo,eulervm}
 %\usepackage{tgpagella,eulervm}
 %\usepackage[charter]{mathdesign}
-\usepackage[osf,sc]{mathpazo}
+%\usepackage[osf,sc]{mathpazo}
 %\usepackage[sc]{mathpazo}
 %\usepackage{
 %lmodern, 
 %hfoldsty 
 % charter
 %}
-
 
 %Sprachenbezogene Pakete
 %\usepackage[english]{babel} % englische Sprache
@@ -83,6 +69,9 @@
 %\setstretch{1,2381}
 \onehalfspacing
 
+% Das braucht TODO, damit es keine Warnung gibt 
+\setlength {\marginparwidth }{2cm} 
+
 % Pakete für Grafik, Tabellen u.a.
 \usepackage{verbatim} %für multiline comments
 %\usepackage[nonumberlist, acronym, toc, section]{glossaries}
@@ -129,6 +118,8 @@ add-integer-zero = false,
 %Captions left
 \usepackage[font=footnotesize,labelfont=bf,singlelinecheck=false,format=plain,,justification=justified,indention=0cm]{caption}
 
+% Misc
+\usepackage[colorinlistoftodos]{todonotes} % für die guten TODOS
 
 
 
