@@ -1,0 +1,134 @@
+\usepackage[a4paper,left=35mm,width=145mm,top=20mm]{geometry}
+%Automatische Verzeichnisse ins Inhaltsverzeichnis
+\usepackage{tocbibind}
+%	\renewcommand{\tableofcontents}{\begingroup
+%		\tocsection
+%		\tocchapter
+%		\tocfile{\contentsname}{toc}
+%	\endgroup}
+%	\renewcommand{\listoffigures}{\begingroup
+%    	\tocsection
+%        \tocchapter
+%    	\tocfile{\listfigurename}{lof}
+% 	\endgroup}
+%	\renewcommand{\listoftables}{\begingroup
+%    	\tocsection
+%    	\tocfile{\listtablename}{lot}
+% 	\endgroup}
+
+\usepackage[utf8]{inputenc} % Kodierung
+\usepackage[ngerman]{babel} % deutsche Sprache
+\usepackage{acronym}
+%Verwendete Schrift z.B. lmodern
+%\usepackage{lmodern}
+%\usepackage{libertine}
+%\usepackage{mathpazo,eulervm}
+%\usepackage{tgpagella,eulervm}
+%\usepackage[charter]{mathdesign}
+\usepackage[osf,sc]{mathpazo}
+%\usepackage[sc]{mathpazo}
+%\usepackage{
+%lmodern, 
+%hfoldsty 
+% charter
+%}
+
+
+%Sprachenbezogene Pakete
+%\usepackage[english]{babel} % englische Sprache
+%\usepackage[babel, german=guillemets]{csquotes}
+\usepackage[babel, german=quotes]{csquotes} %Deutsche Anführungszeichen
+
+\usepackage[T1]{fontenc}
+\usepackage{eurosym}
+% Das € Zeichen kann nun wirklich mit € angezeigt werden
+\DeclareUnicodeCharacter{20AC}{\euro}
+%Die Pakete für den Index
+\usepackage{makeidx}
+\makeindex
+%Diverse Standardpakete
+\usepackage[
+		pdftex,
+		pdfpagelabels=true,
+	 	citecolor=black,
+       	filecolor=blue,
+      	urlcolor=black,
+       	bookmarks=true,
+       	bookmarksopen=true,
+       	bookmarksopenlevel=3,
+       	plainpages=false,
+       	pdfpagelabels=true,
+       	pdfborder={0 0 0},
+       	breaklinks=true,]{hyperref}
+\hypersetup{colorlinks=true,
+			breaklinks=true,
+			urlcolor=black,
+			linkcolor=black,
+			menucolor=black,
+			% Diese Angaben kommen in die PDF Eigenschaften
+			pdftitle    = {Help-Seeking},
+			pdfsubject  = {Dissertation},
+			pdfauthor   = {Bastian Wimmer},
+			pdfkeywords = {Keyword 1,Keyword 2, Keyword 3},
+			pdfcreator  = {TeXStudio, MacTex \& Me},
+			pdfproducer = {LaTeX with Hyperref}}
+\usepackage[hypcap]{caption}
+
+%Zitierweise im APA-Stil
+\usepackage{cite} % Zitate - MUSS VOR apacite eingebunden werden
+\usepackage{apacite} % Apacite Style einbinden
+
+%%Zeilenabstand
+\usepackage{setspace}
+%\setstretch{1,2381}
+\onehalfspacing
+
+% Pakete für Grafik, Tabellen u.a.
+\usepackage{verbatim} %für multiline comments
+%\usepackage[nonumberlist, acronym, toc, section]{glossaries}
+\usepackage{textcomp}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{booktabs}
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{ifthen}
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}} 
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
+\usepackage{paralist}
+\usepackage{siunitx}
+\sisetup{
+add-decimal-zero = false,
+add-integer-zero = false,
+}
+
+%Befehl für die Linien auf der Titelseite
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+%Absatz einrücken
+%Legt die Einrücktiefe der ersten Zeile nach Überschrift fest
+\usepackage{indentfirst}
+
+% Horiz. Linien in Tabellen verbessern
+\newcommand{\forloop}[5][1]{%
+\setcounter{#2}{#3}%
+\ifthenelse{#4}{#5\addtocounter{#2}{#1}%
+\forloop[#1]{#2}{\value{#2}}{#4}{#5}}%
+{}}
+\newcounter{crcounter}
+\newcommand{\compensaterule}[1]{%
+\forloop{crcounter}{1}{\value{crcounter} < #1}%
+{\vspace*{-\aboverulesep}\vspace*{-\belowrulesep}}}
+\newcommand{\multirowbt}[3]{\multirow{#1}{#2}%
+{\compensaterule{#1}#3}}
+
+%Captions left
+\usepackage[font=footnotesize,labelfont=bf,singlelinecheck=false,format=plain,,justification=justified,indention=0cm]{caption}
+
+
+
+
