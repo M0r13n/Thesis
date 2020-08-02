@@ -25,14 +25,14 @@ Zu Beginn des Experiments wurde jedem Teilnehmer einmalig ein Willkommensbildsch
 
 Eine Teilnahme an dem Experiment war nur nach der erfolgreichen Beantwortung der Fragen möglich. Anschließend wurde jede Person zufällig und dauerhaft einer von drei Experimentalbedingungen  zugeteilt. 
 
-\paragraph{Kontrollgruppe}
-Probanden der Kontrollgruppe mussten die Fragen ohne motivierende Spielmechaniken beantworten.
 
-\paragraph{Experimentalgruppe Abzeichen}
-Probanden der Experimentalgruppe Abzeichen sollten durch das Spielelement Abzeichen motiviert werden.
+\begin{itemize}
+	 \item \textbf{Kontrollgruppe:} Probanden der Kontrollgruppe mussten die Fragen ohne motivierende Spielmechaniken beantworten.
+	 
+    \item \textbf{Experimentalgruppe Abzeichen:} Probanden der Experimentalgruppe Abzeichen sollten durch das Spielelement Abzeichen motiviert werden.
 
-\paragraph{Experimentalgruppe Fortschrittsanzeige}
-Probanden der Experimentalgruppe Fortschrittsanzeige sollten durch das Spielelement Fortschrittsanzeige motiviert werden.
+    \item \textbf{Experimentalgruppe Fortschrittsanzeige:} Probanden der Experimentalgruppe Fortschrittsanzeige sollten durch das Spielelement Fortschrittsanzeige motiviert werden.
+\end{itemize}
 
 Zu Beginn des Experiments erhielt jeder Teilnehmer eine Instruktion. In dieser wurde die Bedienung und Funktion des Terminals erklärt. Dabei wurde explizit auf die besonderen Kommandozeilenbefehle \textbf{clear}, \textbf{about}, \textbf{bug} und \textbf{help} hingewiesen.
 
@@ -52,9 +52,65 @@ Dieser Befehl offenbart für jede Frage einen Lösungshinweis. \\
 
 Unter dem Instruktionstext fand sich zudem die aktuelle Aufgabe, die es durch die Eingabe eines Konsolenbefehls zu lösen galt. Der Rest der Webseite bestand aus einer interaktiven Kommandozeile. Bis zu diesem Punkt war die Anwendung für alle Experimentalgruppen vollkommen identisch.
 
-Die Experimentalgruppe Abzeichen erhielt zusätzlich eine Leiste am oberen Bildschirmrand. Diese wurde sehr prominent gestaltet, damit sie nicht zu übersehen ist. In dieser Leiste befanden sich fünf Abzeichen. Diese wurden zunächst grau hinterlegt und erst durch das Erreichen eines bestimmten Meilensteins farblich hervorgehoben. Das Erreichen eines Meilensteins wurde zudem durch eine Animation begleitet. Dies geschah unter der Annahme, dass eine optisch ansprechende und auffällige Animation die Motivation der Teilnehmer weiter steigern würde. Die erforderlichen Bedingungen für das Erreichen eines Abzeichens ließen sich durch einen Klick auf das jeweilige Abzeichen erfahren.
+Die Experimentalgruppe Abzeichen erhielt zusätzlich eine Leiste am oberen Bildschirmrand. Diese wurde visuell prominent gestaltet. In dieser Leiste befanden sich fünf Abzeichen. Diese wurden zunächst grau hinterlegt und erst durch das Erreichen eines bestimmten Meilensteins farblich hervorgehoben. Das Erreichen eines Meilensteins wurde zudem durch eine Animation begleitet. Dies geschah unter der Annahme, dass eine optisch ansprechende und auffällige Animation die Motivation der Teilnehmer weiter steigern würde. Die erforderlichen Bedingungen für das Erreichen eines Abzeichens ließen sich durch einen Klick auf das jeweilige Abzeichen erfahren. 
+
+Die Abzeichen wurden auf der Basis der Arbeit von \citeauthor{antin_badges_2011} gestaltet. Jedes Abzeichen erfüllt eine der fünf, von \citeauthor{antin_badges_2011} eingeführten, Hauptfunktionen von Abzeichen.
+
+\paragraph{Abzeichen 1:}
+Dieses Abzeichen wird für das Lösen der ersten Aufgabe verliehen. So soll der Nutzer auf weitere Abzeichen aufmerksam gemacht werden. Das Abzeichen hat entsprechend eine instruktive Funktion.
+
+\paragraph{Abzeichen 2:}
+Dieses Abzeichen wird für das Lösen aller Probleme verliehen und dient primär als Statussymbol.
+
+\paragraph{Abzeichen 3:}
+Dieses Abzeichen wird für die Verkettung von mindestens drei Kommandozeilenbefehlen verliehen und weißt damit explizit auf die Möglichkeit der Befehlsverkettung hin. Entsprechend erfüllt das Abzeichen eine instruktive Funktion.
+
+\paragraph{Abzeichen 4:}
+Dieses Abzeichen wird für die Lösung der zwölften Aufgabe verliehen und dient der Bestätigung der erbrachten Leistung des Probanden. Da diese Aufgabe, im Vergleich zu anderen Aufgaben, vergleichsweise schwierig ist, wirkt das Abzeichen zusätzliche als Statussymbol.
+
+\paragraph{Abzeichen 5:}
+Dieses Abzeichen wird für den zehnten Fehlversuch vergeben. Der Nutzer soll nicht für sein Scheitern bestraft werden. Stattdessen wird der Versuch belohnt. Dadurch ist der Nutzer angehalten kreative Wege zu finden, um die Aufgaben zu lösen. Das Abzeichen fungiert damit indirekt als Zielvorgabe.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width = 50pt, height = 50pt]{img/goal.svg}
+    \includesvg[width = 50pt, height = 50pt]{img/goal_reached.svg}
+    \includesvg[width = 50pt, height = 50pt]{img/solutions.svg}
+    \includesvg[width = 50pt, height = 50pt]{img/target.svg}
+    \includesvg[width = 50pt, height = 50pt]{img/win.svg}
+    \caption{Von links nach rechts lesend: Abzeichen 1 bis 5.}
+\end{figure}
+
+
+Die Experimentalgruppe Fortschrittsbalken erhielt einen animierten Fortschrittsbalken. Dieser wurde auffällig am oberen Bildschirmrand platziert. Um den Nutzer auf die Forschrittsanzeige aufmerksam zu machen, war diese bereits zu Beginn des Experiments zu einem Prozent gefüllt. Dabei handelte es sich um eine bestimmte Anzeige, die sich entsprechend des aktuellen Fortschritts des Teilnehmers zunehmend füllte. Somit war es dem Probanden zusätzlich möglich auf die Restdauer des Experiments zu schließen.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{img/progressbar.png}
+    \caption{Ein bereits teilweise gefüllter Fortschrittsbalken.}
+\end{figure}
 
 \subsubsection{Technische Implementation}
+Bei der entwickelten Anwendung handelt es sich um eine interaktive Webanwendung. Diese ist sowohl auf Mobilgeräten als auch an einem klassischen Computer nutzbar. Die Anwendung besteht aus drei Komponenten: Einer statischen Webseite, einem Server und einem Executor. 
+
+\paragraph{Statische Webseite:}
+Die Webseite basiert auf HTML, CSS und Javascript. Der Kommandozeilen-Interpreter basiert auf dem jQuery Plugin \qq{jQuery Terminal Emulator}\footnote{https://terminal.jcubic.pl/}. Die Webseite kommuniziert über eine REST-API mit dem Server. Über diese Schnittstelle werden Nutzerdaten und abgesetzte Befehle kommuniziert. Die Webseite verfügt über keinerlei Anwendungslogik und stellt lediglich die empfangenen Daten des Servers graphisch, in Form einer Kommandozeile, dar.
+
+\paragraph{Server:}
+Der Server ist in Python geschrieben und basiert auf dem verbreiteten Framework \qq{Flask}\footnote{https://github.com/pallets/flask}. Der Server ist verantwortlich für die Nutzerverwaltung, die Nutzererkennung, das Ausführen und die anschließende Validierung der abgesetzte Befehle und die Datenerfassung. Sämtliche Daten werden in einer MySQL-Datenbank gespeichert. Empfangene Befehle reicht der Server an den Executor weiter. Die Kommunikation erfolgt auch hier über eine JSON-basierte REST-API. Der Server fungiert zusätzlich als Cache für bereits ausgeführte Befehle. Diese werden in der Datenbank zwischengespeichert. Somit muss jeder Befehl nur ein einziges Mal real ausgeführt werden.
+
+\paragraph{Executor:}
+Da jede Aufgabe auf unterschiedlichste Art und Weise gelöst werden kann, gibt es unendlich viele Lösungsmöglichkeiten. Daher ist es nötig, die abgesendeten Befehle real auszuführen. Dazu wird jeder Befehl in einem eigenen Docker Container ausgeführt und die Ausgabe sowie mögliche Seiteneffekte mit der erwarteten Ausgabe abgeglichen. Diese Aufgabe übernimmt der Executor als separate Komponente.
+
+
+% erfasste daten und identifikation
+
+% executor
+
+% sewquenz diagramm
+
+
 
 \subsection{Ein- und Ausschlusskriterien}
 
