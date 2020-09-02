@@ -150,8 +150,28 @@ Während des Experiments wurden unterschiedliche Daten erfasst. Diese Erfassung 
 \subsection{Forschungsverlauf}
 Vor der Veröffentlichung des Experiments wurde ein Pretest durchgeführt. Durch diesen sollten potentielle Fehler und Unklarheiten im Studiendesign reduziert werden. Zusätzlich konnte überprüft werden, ob die Studie grundlegend funktioniert. Im Rahmen des Tests wurden neben kleineren Fehlern wesentliche Probleme deutlich. Zum einen waren die Abzeichen deutlich zu unauffällig und wirkten laut Aussage der Teilnehmer wenig bis gar nicht motivierend. Aus diesem Grund wurden die Abzeichen größer und farbenfroher gestaltet. Zusätzlich wurde eine Animation abgespielt, sobald ein Abzeichen erreicht wurde. Außerdem gaben mehrere Teilnehmer an, dass die Fragen unverständlich und zu komplex seien. Dies hat dazu geführt, dass die Komplexität drastisch reduziert wurde. Am Ende ließen sich alle Fragen durch maximal zwei Befehle lösen. Zusätzlich wurde eine Hilfsfunktion eingebaut. Durch den Befehl \textbf{help} erhielten Probanden weiterführende Informationen, die der Lösung der Aufgabe dienten. Die Reaktionszeit wurde als zu langsam empfunden. Daher wurde das Image des Containers drastisch reduziert und auf die nötigsten Programme reduziert. Zusätzlich wurde ein Cache für bereits ausgeführte Befehle eingeführt. Auf diese Weise konnte eine Reaktionszeit von 0.5 bis 2 Sekunden pro abgesetztem Befehl gewährleistet werden.
 
-Das Experiment startete schließlich am 05.07.2020. Bis zum 05.08.2020 kamen jedoch nur 39 Teilnehmer zusammen. Aus diesem Grund wurde am 05.08.2020 entschlossen, das Experiment auf Facebook und in dem Forum \textit{Hardwareluxx}\footnote{www.hardwareluxx.de} zu teilen. Durch diese Maßnahme kamen in fünf Tagen über 60 weitere Teilnehmer zu Stande.
+Das Experiment startete schließlich am 05.07.2020. Bis zum 05.08.2020 kamen jedoch nur 39 Teilnehmer zusammen. Aus diesem Grund wurde am 05.08.2020 entschlossen, das Experiment auf Facebook und in dem Forum Hardwareluxx\footnote{www.hardwareluxx.de} zu teilen. Zusätzlich wurde das Experiment auf Reddit in dem Subreddit \textit{/r/takemysurvey/} und auf HackerNews\footnote{news.ycombinator.com/} beworben. Leider wurde die Studie als Eigenwerbung bewertet und nach wenigen Stunden auf HackerNews gelöscht. 
 
-\subsection{Datenanalyse}
+\subsection{Statistische Auswertung}
+Leistung messe ich durch die Anzahl beantworteter Fragen. Zusätzlich wird die Gesamtzeit als Vergleichsparameter herangezogen. Diese ergibt sich aus der Differenz des ersten und letzten abgeschickten Befehls. Zeitspannen von mehr als 30 Minuten ohne Nutzeraktivität (d.h. es wurde in einem Zeitraum von 30 Minuten kein Befehl abgesetzt) werden als Inaktivität gewertet und von der Gesamtzeit abgezogen. Dies geschieht unter der Annahme, dass motivierte Teilnehmer mehr Zeit investieren. Auf diese Weise wird der Effekt der unabhängigen Variablen Fortschrittsbalken und Abzeichen auf Motivation und Leistung quantifizierbar gemacht. Ausreißer werden von den Ergebnissen ausgeschlossen. Als Grenzbereich ist der Mittelwert plus zwei Standardabweichungen gewählt.
 
-Leistung messe ich durch die Anzahl beantworteter Fragen. Motivation messe ich durch die Auswertung der finalen Frage entsprechend der Lickert-Skala. Zusätzlich lässt sich aus den erfassten Daten rekonstruieren, wie lange ein Proband an dem Experiment teilgenommen hat. Diese ergibt sich aus der Differenz des ersten und letzten abgeschickten Befehls. Zeitspannen von mehr als 30 Minuten ohne Nutzeraktivität (d.h. es wurde in einem Zeitraum von 30 Minuten kein Befehl abgesetzt) werden als Inaktivität gewertet und von der Gesamtzeit abgezogen. Dies geschieht unter der Annahme, dass motivierte Teilnehmer mehr Zeit investieren. Auf diese Weise wird der Effekt der unabhängigen Variablen, Abzeichen auf Motivation und Leistung quantifizierbar gemacht.
+Die aufgestellten Hypothesen werden mithilfe von t-Tests überprüft. Die dafür erforderlichen Voraussetzungen sind erfüllt:
+
+\paragraph{Unabhängigkeit der Messungen}
+Da ein Proband immer einer festen Gruppen zugewiesen ist, ist es nicht möglich, dass Teilnehmer in mehreren Gruppen auftauchen.
+
+\paragraph{Intervallskalierung}
+Die abhängige Variable \textit{Anzahl beantworteter Fragen} lässt sich quantitativ mittels Zahlen darstellen und ist daher ein metrisches Messniveau.
+
+\paragraph{Nominalskalierte, unabhängige Variable}
+Es werden jeweils zwei unabhängige Gruppen miteinander verglichen.
+
+\paragraph{Normalverteilung}
+Das Vorliegen einer Normalverteilung wird durch Shapiro–Wilk Tests überprüft.
+
+\paragraph{Varianzhomogenität}
+Das Vorhandensein von Varianzhomogenität wird durch Levene-Tests überprüft.
+
+Die t-Tests werden durch eine einfaktorielle ANOVA Varianzanalyse erweitert. Durch diese lassen sich die drei Versuchsgruppen miteinander vergleichen.
+
+\todo[inline]{Sollte sich herausstellen, dass nicht-parametrische, nicht normalverteilte Daten vorliegen, führe ich statt dem t-test einen Mann-Whitney-U test und statt ANOVA einen 	Kruskal-Wallis-Test durch.}
