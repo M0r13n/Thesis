@@ -41,26 +41,212 @@ Betrachtet man die Zeit, die die Teilnehmer im Mittel in das Experiment investie
 Sowohl die investierte Gesamtzeit als auch die Anzahl abgesetzter Befehle zeichnen sich damit durch eine hohe Streuung aus. Betrachtet man jeweils den Median weisen beide Experimentalbedingung eine messbare Erhöhung in der Gesamtzeit und der Befehlszahl gegenüber der Kontrollgruppe auf. Aufgrund der hohen Diskrepanz zwischen Median und Mittelwert sowie der extrem hohen Standardabweichung habe ich beschlossen extreme Ausreißer aus der weiteren Betrachtung auszuschließen. Bei diesen Ausreißern gehe ich davon aus, dass eine, von den Spielelementen unabhängige, Intrinsische Motivation vorliegt. Als Grenzwert wählte ich $\pm 2\sigma$. Dies führt dazu, dass sämtliche Teilnehmer mit mehr als 3896 Sekunden Spieldauer aus dem Datensatz ausgeschlossen werden. Zusätzlich werden nur Teilnehmer berücksichtigt, die mindestens einen Befehl abgesetzt haben. Damit reduziert sich der Datensatz im folgenden auf einen Umfang von 190.
 
 \subsection{Hypothesenüberprüfung}
-Die aufgestellten Hypothesen werden durch einen t-Test und eine einfaktorielle  ANOVA  Varianzanalyse überprüft. Zunächst sind die Voraussetzungen Normalverteilung und Varianzhomogenität zu prüfen. Da jede Versuchsbedingung einen Umfang von deutlich über 30 Probanden aufweist, kann von einer Normalverteilung ausgegangen werden. Um die Vorraussetzung der Varianzhomogenität zu prüfen, habe ich einen Levene-Test durchgeführt. Bei diesem handelt es sich um einen Signifikanztest. Dieser prüft, ob die Varianzen innerhalb von zwei oder mehr Grundgesamtheiten (Gruppen) gleich sind (H0). Daraus ergibt sich die Alternativhypothese (H1), dass mindestens ein Gruppenpaar ungleiche Varianzen besitzt. Befindet sich der p-Wert unterhalb  eines zuvor definierten Signifikanzniveaus sind die Unterschiede in den Varianzen der unterschiedlichen Stichproben signifikant. Folglich kann die Nullhypothese des Tests abgelehnt werden. 
+Die aufgestellten Hypothesen werden durch einen t-Test und eine einfaktorielle  ANOVA  Varianzanalyse überprüft. Zunächst sind die Voraussetzungen Normalverteilung und Varianzhomogenität zu prüfen. Da jede Versuchsbedingung einen Umfang von deutlich über 30 Probanden aufweist, kann von einer Normalverteilung ausgegangen werden. Um die Vorraussetzung der Varianzhomogenität zu prüfen, habe ich einen Levene-Test durchgeführt. Bei diesem handelt es sich um einen Signifikanztest. Dieser prüft, ob die Varianzen innerhalb von zwei oder mehr Grundgesamtheiten (Gruppen) gleich sind (H0). Daraus ergibt sich die Alternativhypothese (H1), dass mindestens ein Gruppenpaar ungleiche Varianzen besitzt. Befindet sich der p-Wert unterhalb  eines zuvor definierten Signifikanzniveaus sind die Unterschiede in den Varianzen der unterschiedlichen Stichproben signifikant. Folglich kann die Nullhypothese des Tests abgelehnt werden. Für den Test gehe ich von einem Signifikanzniveau von 5\% aus. 
+
+\subsubsection{Überprüfung mittels t-Test}
+
+\paragraph{Hypothese 1 }
+\begin{center}
+    \textit{Probanden, die Abzeichen erhalten (EB), beantworten im Mittel eine höhere Anzahl an Fragen als eine Kontrollgruppe ohne Abzeichen (KG).} 
+\end{center}
+
+Die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Abzeichen' ($M =4.04;\:SD=3.20$) und Probanden der Kontrollgruppe ohne Spielelemente ($M=4.30;\:SD=3.86$) war nicht signifikant ($t (124) = -0.40451;\: p = 0.657$). Die Hypothese konnte damit nicht bestätigt werden. Aus diesem Grund wandelte ich die ursprüngliche Hypothese ab, um ein tiefergehendes Verständnis der Daten zu erlangen: 
+
+\begin{itemize}
+    \item \textbf{1.A:} \textit{Probanden, die Abzeichen erhalten, verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe ohne Spielelemente.}
+    \item \textbf{1.B:} \textit{Probanden, die Abzeichen erhalten, benutzen durchschnittlich mehr Befehle als eine Kontrollgruppe ohne Spielemente.} 
+\end{itemize}
+
+Die Ergebnisse für den t-Test sind in Tabelle \ref{ttest_hypo_1} dargestellt. Der p-Wert blieb für beide Hypothesen deutlich oberhalb des Signifikanzniveaus. Folglich müssen beiden Hypothesen abgelehnt werden. Bei allen drei Hypothesen war die Signifikanz des Levene-Tests unterhalb des üblichen Grenzwertes von 0.05. Damit kann angenommen werden, dass die Varianzen der beiden Stichproben gleich sind. Entsprechend sind die Voraussetzungen für die Durchführung eines t-Tests erfüllt.
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 1 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
-\begin{tabular}{ |p{2.6cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
+\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
  \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
  \hline
  & F & df1 &df2 &p \\
  \hline
-  Befehlanzahl   & 1.55    & 2 &   187 & 0.215\\
-  Gesamtspielzeit   & 3.09    & 2 &   187 & 0.048\\
+  Befehlanzahl      & 0.0227    & 1 &   124 & 0.880\\
+  Gesamtspielzeit   & 0.0284    & 1 &   124 & 0.867\\
+  Gelöste Aufgaben  & 1.9587    & 1 &   124 & 0.164\\
  \hline
 \end{tabular}
-\caption{Levene-Test auf Varianzhomogenität für die Bedingungen Befehlsanzahl und Gesamtspielzeit.}
-\label{levene}
+\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Abzeichen (Hypothese 1). Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
+\label{levene_hypo_1}
 \end{table}
-Für den Test gehe ich von einem Signifikanzniveau von 5\% aus. Wie in Tabelle \ref{levene} zu sehen, ist der Levene-Test nur für die Gesamtspielzeit unterhalb des Signifikanzniveaus von 5\% und damit signifikant. Dies schließt jedoch die Verwendung eines t-Tests nicht aus, da dieser sehr robust gegenüber Verletzungen seiner Voraussetzungen ist. Somit kann ein t-Test für die Bewertung der Gesamtanzahl abgesetzter Befehle angewendet werden.
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ TEST - HYPO 1 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
+ \hline
+ \multicolumn{4}{|c|}{Zweistichproben-t-Test (Students's t)} \\
+ \hline
+ & T &df & p \\
+ \hline
+  Befehlanzahl       & 0.16608  &   124 & 0.434\\
+  Gesamtspielzeit    & -0.00332 &   124 & 0.501\\
+  Gelöste Aufgaben   & -0.40451 &   124 & 0.657\\
+ \hline
+\end{tabular}
+\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1). Anmerkung: $H_a:\: EB > KG$}
+\label{ttest_hypo_1}
+\end{table}
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 
-\paragraph{Hypothese 1}
-Die Hypothese lautete: \textit{Probanden, die Abzeichen erhalten, verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe ohne Fortschrittsanzeige.} Diese Hypothese konnte mit $t(124)=0.00332$, $p=.501$ nicht bestätigt werden. Der t-Test war ebenfalls nicht signifikant. Zusätzlich prüfte ich, ob Teilnehmer mehr Befehle absetzten und entsprechend aktiver waren, wenn diese ein Abzeichen erhielten. Auch diese Hypothese konnte mit $t(124)=0.167$, $p=.434$ nicht bestätigt werden.
 
-\paragraph{Hypothese 2}
-Die Hypothese lautete: \textit{Probanden, die eine Fortschrittsanzeige sehen, verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe ohne Fortschrittsanzeige.} Diese Hypothese konnte mit $t(116)=1.21$, $p=.115$ nicht bestätigt werden, da der t-Test nicht signifikant war. Ergänzend prüfte ich erneut, ob Probanden der Experimentalbedingung 'Fortschrittsanzeige' mehr Fragen beantworteten als Probanden der Kontrollgruppe. Diese Hypothese konnte erneut nicht bestätigt werden, da der t-Test nicht signifikant war ($t(116)=0.745$, $p=.229$).
+
+\paragraph{Hypothese 2 }
+\begin{center}
+    \textit{Probanden, die eine Fortschrittsanzeige erhalten (EP), beantworten im Mittel eine höhere Anzahl an Fragen als eine Kontrollgruppe ohne Fortschrittsanzeige (KG).} 
+\end{center}
+
+Die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Fortschrittsanzeige' ($M =4.30;\:SD=3.86$) und Probanden der Kontrollgruppe ($M=4.27;\:SD=3.65$) war nicht signifikant ($t (116) = 0.0443;\: p = 0.482$). Auch diese Hypothese konnte damit nicht bestätigt werden. Die für Hypothese 1 abgewandelten Hypothesen wurden auch für die Versuchsbedingung 'Fortschrittsanzeige' aufgestellt: 
+
+\begin{itemize}
+    \item \textbf{1.A:} \textit{Probanden, die eine Fortschrittsanzeige erhalten, verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe ohne Spielelemente.}
+    \item \textbf{1.B:} \textit{Probanden, die eine Fortschrittsanzeige erhalten, benutzen durchschnittlich mehr Befehle als eine Kontrollgruppe ohne Spielelemente.} 
+\end{itemize}
+
+Die Ergebnisse für die Hypothesen sind in Tabelle \ref{levene_hypo_2} dargestellt. Erneut ist kein Test signifikant und folglich kann keine Hypothese bestätigt werden. Zwei Beobachtungen sind dabei besonders auffällig: Zum einen fällt ein großer Unterschied in der mittleren Spielzeit und der Anzahl benutzter Befehle auf. Insbesondere die Spielzeit unterscheidet sich zwischen der Experimentalbedingung ($M=255.03$) deutlich von der Kontrollgruppe ($M=382.04$). Dieser Unterschied spiegelt sich auch im t-Test wieder ($t(116)=1.2056$). Mit einem p-Wert von $p=0.115$ ist der Test zwar nicht signifikant, jedoch im Vergleich zu den anderen Ergebnissen deutlich reduziert. Damit kann von einem gegenteiligen Effekt ausgegangen werden, als ursprünglich antizipiert. Die Fortschrittsanzeige scheint sich tendenziell negativ auf das Durchhaltevermögen der Teilnehmer auszuwirken. Auffällig ist zudem der signifikante p-Wert ($p=0.030$) des Levene-Tests für die Gesamtspielzeit. Dies deutet auf eine Verletzung der Annahme von Varianzhomogenität hin. Damit ist zwar die Voraussetzung für die Durchführung des t-Tests formal nicht erfüllt, jedoch ist der t-Test sehr robust gegenüber Verletzungen seiner Voraussetzungen. Aus diesem Grund werden die Ergebnisse trotzdem berücksichtigt.
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
+ \hline
+ \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
+ \hline
+ & F & df1 &df2 &p \\
+ \hline
+  Befehlanzahl      & 2.902     & 1 &   116 & 0.091\\
+  Gesamtspielzeit   & 4.814     & 1 &   116 & 0.030*\\
+  Gelöste Aufgaben  & 0.190     & 1 &   116 & 0.664\\
+ \hline
+\end{tabular}
+\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Fortschrittsanzeige (Hypothese 2). Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
+\label{levene_hypo_2}
+\end{table}
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ TEST - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
+ \hline
+ \multicolumn{4}{|c|}{Zweistichproben-t-Test (Students's t)} \\
+ \hline
+ & T &df & p \\
+ \hline
+  Befehlanzahl       & 0.7447   &   116 & 0.229\\
+  Gesamtspielzeit    & 1.2056   &   116 & 0.115\\
+  Gelöste Aufgaben   & 0.0443   &   116 & 0.482\\
+ \hline
+\end{tabular}
+\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1). Anmerkung: $H_a:\: EP > KG$}
+\label{ttest_hypo_2}
+\end{table}
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ ANOVA ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+\subsubsection{Überprüfung mittels ANOVA Varianzanalyse }
+Bei der ANOVA (engl. \textit{Analysis of Variance}) handelt es sich um eine Varianzanalyse, die die Mittelwerte von mehr als 2 Gruppen vergleichbar macht. Dabei handelt es sich um eine Erweiterung des t-Tests, welcher auf den Vergleich von maximal 2 Stichproben beschenkt ist. Nachfolgend werden die zwei abhängigen Variablen \textbf{Gelöste Aufgaben} und \textbf{Gesamtspielzeit} jeweils durch eine einfaktorielle Varianzanalyse untersucht.
+
+% Varianzhomogenität prüfen 
+Zunächst gilt es erneut die Voraussetzung der Varianzhomogenität mittels Levene-Test zu prüfen. Wie in Tabelle \ref{levene_amova} zu sehen, ist die Signifikanz der Zeile \textit{Gesamtspielzeit} mit $p=0.048$ knapp unterhalb des Signifikanzniveaus von 5\%. Damit ist die Voraussetzung für die Durchführung einer ANOVA formal nicht gegeben. Aufgrund der minimalen Unterschreitung des Grenzwertes ($\Delta=0.002$) habe ich entschlossen, die Analyse dennoch durchzuführen. Ich nehme daher an, dass die Varianzen in den verschiedenen Stichproben gleich sind.
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - ANOVA ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
+ \hline
+ \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
+ \hline
+ & F & df1 &df2 &p \\
+ \hline
+  Gelöste Aufgaben      & 1.01     & 1 &   187 & 0.365\\
+  Gesamtspielzeit       & 3.09     & 1 &   187 & 0.048*\\
+ \hline
+\end{tabular}
+\caption{Levene-Test auf Varianzhomogenität. Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
+\label{levene_amova}
+\end{table}
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+Mit $F(2,187) = 1.02$ und einer Signifikanz von $p=0.903$ gibt es keinen statisch signifikanten Unterschied der Gruppenmittelwerte hinsichtlich der Anzahl gelöster Aufgaben. Ein ähnliches Ergebnis liefert die ANOVA für die Gesamtspielzeit ($F=0.967$). Allerdings ist dieses Resultat mit $p=0.382$ deutlich signifikanter, auch wenn es sehr deutlich oberhalb dem Signifikanzniveau liegt. Damit kann gezeigt werden, dass kein signifikanter Unterschied im Zusammenhang der Anzahl gelöster Aufgaben sowie der Gesamtspielzeit zwischen den Teilnehmern besteht, die unterschiedliche Spielelemente erhalten haben.
+
+Obwohl die Werte der einzelnen Gruppen sich nicht signifikant voneinander unterscheiden, habe ich einen Post-hoc Test durchgeführt, um tiefer gehende Einblicke in die Daten zu erlangen. Ich verwendete dazu einen Tukey Test, da gleiche Varianzen vorliegen. Die Ergebnisse sind in Tabelle \ref{tukey_subs} (Befehle) und Tabelle \ref{tukey_time} (Gesamtspielzeit) dargestellt. Erwartungsgemäß findet sich kein signifikanter p-Wert. Dies ist in Anbetracht der nicht festgestellten Signifikanz in der ANOVA wenig verwunderlich. Es finden sich jedoch zwei Auffälligkeiten: 
+
+Zunächst fallen die vergleichsweise hohen p-Werte ($p \in \{ 0.916, 0.928, 0.999, 1.000\}$) auf. Dies deutet darauf hin, dass sich die einzelnen Stichproben kaum bis gar nicht voneinander unterscheiden. Dies wird besonders für die Anzahl der gelösten Aufgaben deutlich (siehe Tabelle \ref{tukey_subs}). Auch unterscheiden sich die Experimentalbedingung 'Abzeichen' und die Kontrollgruppe hinsichtlich der Gesamtspielzeit nahezu überhaupt nicht ($p\approx1$). Darüber hinaus ist die mittlere Abweichung der Gesamtspielzeit zwischen den Experimentalbedingungen 'Abzeichen' und 'Fortschrittsanzeige' auffällig. Probanden, die eine Fortschrittsanzeige sahen, verbrachten im Mittel \nicefrac{1}{3} weniger Zeit mit dem Experiment (MD=127) als Teilnehmer, die Abzeichen erhielten, bzw. als Teilnehmer, die gar kein Spielelement erhielten.
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ POSTHOC ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ p{2cm} p{4cm} p{2.0cm} p{2.0cm} p{2.0cm} }
+ \hline
+ \multicolumn{5}{c}{Test auf Varianzhomogenität (Levene's)} \\
+ \hline
+ & & EB & KG & EP \\
+ \hline
+  EB    &   Mittlere Abweichung     & -     & -0.255        & -0.2240          \\
+        &   t                       & -     & -0.398        & -0.3672          \\
+        &   df                      & -     & 187           & 187              \\
+        &   p                       & -     & \fbox{0.916}  & \fbox{0.928}     \\
+  & & & &\\
+  KG    &   Mittlere Abweichung     &       & -    & 0.0307         \\
+        &   t                       &       & -    & 0.0468         \\
+        &   df                      &       & -    & 187            \\
+        &   p                       &       & -    & \fbox{0.999}          \\
+  & & & &\\
+  EP    &   Mittlere Abweichung     &       &       & - \\
+        &   t                       &       &       & - \\
+        &   df                      &       &       & - \\
+        &   p                       &       &       & - \\
+  
+ \hline
+\end{tabular}
+\caption{Tukey Post-Hoc Test für die Gruppen Experimentalbedingung Abzeichen (EB), Experimentalbedingung Fortschrittsbalken (EP) und Kontrollgruppe (KG). Abhängige Variable: \textbf{Anzahl gelöster Aufgaben}}
+\label{tukey_subs}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{ p{2cm} p{4cm} p{2.0cm} p{2.0cm} p{2.0cm} }
+ \hline
+ \multicolumn{5}{c}{Test auf Varianzhomogenität (Levene's)} \\
+ \hline
+ & & EB & KG & EP \\
+ \hline
+  EB    &   Mittlere Abweichung     & -     & -0.384    & \fbox{127}   \\
+        &   t                       & -     & -0.00359  & 1.24         \\
+        &   df                      & -     & 187       & 187          \\
+        &   p                       & -     & \fbox{1.000}     & 0.431 \\
+  & & & &\\
+  KG    &   Mittlere Abweichung     &       & -         & 127   \\
+        &   t                       &       & -         & 1.16  \\
+        &   df                      &       & -         & 187   \\
+        &   p                       &       & -         & 0.480 \\
+  & & & &\\
+  EP    &   Mittlere Abweichung     &       &           & -     \\
+        &   t                       &       &           & -     \\
+        &   df                      &       &           & -     \\
+        &   p                       &       &           & -     \\
+  
+ \hline
+\end{tabular}
+\caption{Tukey Post-Hoc Test für die Gruppen Experimentalbedingung Abzeichen (EB), Experimentalbedingung Fortschrittsbalken (EP) und Kontrollgruppe (KG). Abhängige Variable: \textbf{Gesamtspielzeit}}
+\label{tukey_time}
+\end{table}
+
+% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ POSTHOC - END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+\subsection{Zwischenfazit t-Test und ANOVA}
+Die geschilderten Ergebnisse entsprechen nicht meinen ursprünglichen Erwartungen. Tatsächlich kann weder durch einen t-Test noch durch eine ANOVA ein signifikanter Effekt auf die Anzahl gelöster Aufgaben, die Menge der abgesetzten Befehle oder die Gesamtspielzeit nachgewiesen werden. Als Konsequenz kann keine meiner ursprünglich aufgestellten Hypothesen bestätigt werden. Die Spielelemente Abzeichen und Fortschrittsbalken zeigen damit in meinem Experiment keinerlei statisch signifikanten, positiven Effekt auf das Durchhaltevermögen (gemessen durch die Gesamtspielzeit) der Teilnehmer. Auch lässt sich keine erhöhte Aktivität der Probanden feststellen, da sich die Versuchsbedingungen hinsichtlich der gelösten Aufgaben und abgesetzten Befehle nicht signifikant unterscheiden. Stattdessen kann im Fall der Fortschrittsanzeige ein tendenziell negativer Einfluss beobachtet werden. Dieser zeigt sich insbesondere in der Gesamtspielzeit, welche im Mittel deutlich geringer ist als in den Alternativbedingungen. 
+
+
+\subsection{Erweiterte Analyse}
+Da die Ergebnisse sich nicht mit meinen Erwartungen decken, habe ich weitere Analysen durchgeführt, um ein tiefergehendes  Verständnis der gewonnen Daten zu entwickeln.
