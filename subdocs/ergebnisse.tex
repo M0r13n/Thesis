@@ -24,16 +24,6 @@ Im Mittel verbrachten die Teilnehmer 527 Sekunden (Standardabweichung 1588) mit 
 
 Die Kontrollgruppe nutze mit durchschnittlich 19.8 Befehlen die meisten Kommandos (Standardabweichung 26.7). Die Versuchsbedingung 'Abzeichen' weist im Vergleich eine durchschnittliche Anzahl abgesetzter Befehle von 18.4 (Standardabweichung 23.8) auf, während es Probanden aus der Bedingung 'Fortschrittsanzeige' auf durchschnittlich 15.4 Befehle bringen (Standardabweichung 16.3). Die Mittelwerte und das zugehörige Konfidenzintervall sind in Abbildung \ref{mean_subs} dargestellt. Betrachtet man den Median der einzelnen Versuchsbedingungen, ist die Kontrollgruppe mit 11 Kommandos pro Teilnehmer weiterhin die aktivste Bedingung. Allerdings sind Probanden der Experimentalgruppe 'Fortschrittsanzeige' im Median (10 Befehle) aktiver als Teilnehmer, die ein Abzeichen erhielten (8.5 Befehle). Der Median der erfolgreich gelösten Aufgaben liegt bei den beiden Experimentalbedingungen bei 3 Aufgaben und bei der Kontrollgruppe bei 4. Somit unterscheiden sich die drei Versuchsbedingungen hinsichtlich der Anzahl beantworteter Fragen und dabei genutzter Konsolenbefehle nicht wesentlich voneinander. Auffällig ist die hohe Standardabweichung der genutzten Befehle in den einzelnen Bedingungen. Besonders die die Gruppe mit Abzeichen von die Kontrollgruppe streuen stark um den Mittelwert und haben damit häufig deutlich mehr oder deutlich weniger mit der Anwendung interagiert. Dies erklärt warum die Gruppe mit einer Fortschrittsanzeige im Mittel am wenigsten Befehle verwendete, aber einen im Median mehr Befehle nutzen als die Versuchsbedingung mit Abzeichen: Bei der Fortschrittsanzeige liegen schlicht weniger Ausreißer vor.  
 
-
-% Delete me ?
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.5\textwidth]{img/auswertung/density.png}
-    \caption{Die Verteilungskurve aller Teilnehmer hinsichtlich der Gesamtspielzeit.}
-    \label{density}
-\end{figure}
-
-
 % Investierte Zeit
 \begin{figure}[htbp]
     \centering
@@ -42,14 +32,12 @@ Die Kontrollgruppe nutze mit durchschnittlich 19.8 Befehlen die meisten Kommando
     \label{mean_time}
 \end{figure}
 
-Betrachtet man die Zeit, die die Teilnehmer im Mittel in das Experiment investiert haben, fällt auf, dass die Teilnehmer der Versuchsbedingung 'Abzeichen' mit 654 Sekunden (Standardabweichung 2190) deutlich mehr Zeit als die Kontrollgruppe ( 447 Sekunden; Standardabweichung 1161 Sekunden) investierten. Letztere hat wiederum mehr Zeit investiert, als die Probanden der Versuchsbedingung 'Fortschrittsanzeige'. Diese brachten 330 Sekunden (Standardabweichung 740) für das Experiment auf. Die entsprechenden Mittelwerte sind in Abbildung \ref{mean_time} dargestellt. Erneut zeigt sich eine, durch das große Streuungsintervall (hohe Standardabweichung) induzierte, Verzerrung der Mittelwerte. Die jeweiligen Mediane der unterschiedlichen Bedingungen liegen deutlich näher beieinander, als es der Durchschnitt erwarten lässt. Der Median der Kontrollgruppe ist am höchsten (136). während Fortschrittsanzeige und Abzeichen im Median weniger Zeit investierten (EB = 109; EP=116).
-
-Aufgrund der hohen Diskrepanz zwischen Median und Mittelwert sowie der hohen Standardabweichung wurden extreme Ausreißer aus der weiteren Betrachtung ausgeschlossen. Bei diesen Ausreißern gehe ich davon aus, dass eine, von den Spielelementen unabhängige, Intrinsische Motivation vorliegt. Als Grenzwert wählte ich $\pm 2\sigma$. Dies führt dazu, dass sämtliche Teilnehmer mit mehr als 3537 Sekunden Spieldauer aus dem Datensatz ausgeschlossen werden. Zusätzlich werden nur Teilnehmer berücksichtigt, die mindestens einen Befehl verwendet haben. Der so entstandene Datensatz hat einen Umfang von 233 (-33).
+Betrachtet man die Zeit, die die Teilnehmer im Mittel in das Experiment investiert haben, fällt auf, dass die Teilnehmer der Versuchsbedingung 'Abzeichen' mit 654 Sekunden (Standardabweichung 2190) deutlich mehr Zeit als die Kontrollgruppe ( 447 Sekunden; Standardabweichung 1161 Sekunden) investierten. Letztere hat wiederum mehr Zeit investiert, als die Probanden der Versuchsbedingung 'Fortschrittsanzeige'. Diese brachten 330 Sekunden (Standardabweichung 740) für das Experiment auf. Die entsprechenden Mittelwerte sind in Abbildung \ref{mean_time} dargestellt. Erneut zeigt sich eine, durch das große Streuungsintervall (siehe auch Abbildung \ref{mean_time}) induzierte, Verzerrung der Mittelwerte. Die jeweiligen Mediane der unterschiedlichen Bedingungen liegen deutlich näher beieinander, als es der Durchschnitt erwarten lässt. Der Median der Kontrollgruppe ist am höchsten (136). während Fortschrittsanzeige und Abzeichen im Median weniger Zeit investierten (EB = 109; EP=116).
+Aufgrund der hohen Diskrepanz zwischen Median und Mittelwert sowie der hohen Standardabweichung wurden extreme Ausreißer aus der weiteren Betrachtung ausgeschlossen. Bei diesen Ausreißern gehe ich davon aus, dass eine, von den Spielelementen unabhängige, Intrinsische Motivation vorliegt. Als Grenzwert wählte ich die zweifache Standardabweichung ($\pm 2\sigma$). Dies führt dazu, dass sämtliche Teilnehmer mit mehr als 3537 Sekunden Spieldauer aus dem Datensatz ausgeschlossen werden. Zusätzlich werden nur Teilnehmer berücksichtigt, die mindestens einen Befehl verwendet haben. Der so entstandene Datensatz hat einen Umfang von 240 (-26).
 
 \subsection{Hypothesenüberprüfung}\label{hypo}
-Die aufgestellten Hypothesen werden durch einen t-Test und eine einfaktorielle  ANOVA  Varianzanalyse überprüft. Zunächst sind die Voraussetzungen Normalverteilung und Varianzhomogenität zu prüfen. Nur wenn diese erfüllt sind, liefern t-Test und ANOVA statistisch signifikante Ergebnisse. Da jede Versuchsbedingung einen Umfang von deutlich über 30 Probanden aufweist, kann von einer Normalverteilung ausgegangen werden. Um die Vorraussetzung der Varianzhomogenität zu prüfen, habe ich einen Levene-Test durchgeführt. Bei diesem handelt es sich um einen Signifikanztest, welcher prüft, ob die Varianzen innerhalb von zwei oder mehr Grundgesamtheiten (Gruppen) gleich sind (H0). Daraus ergibt sich die Alternativhypothese (H1), dass mindestens ein Gruppenpaar ungleiche Varianzen besitzt. Befindet sich der p-Wert unterhalb  eines zuvor definierten Signifikanzniveaus sind die Unterschiede in den Varianzen der unterschiedlichen Stichproben signifikant. Folglich kann die Nullhypothese des Tests abgelehnt werden und es kann angenommen werden, dass die Varianzen ungleich sind. Für den Test gehe ich von einem Signifikanzniveau von 5\% aus. 
+Die aufgestellten Hypothesen werden durch einen t-Test und eine einfaktorielle  ANOVA  Varianzanalyse überprüft. Zunächst sind die Voraussetzungen Normalverteilung und Varianzhomogenität zu prüfen. Da jede Versuchsbedingung einen Umfang von deutlich über 30 Probanden aufweist, kann von einer Normalverteilung ausgegangen werden. Um die Vorraussetzung der Varianzhomogenität zu prüfen, wurde ein Levene-Test durchgeführt. Bei diesem handelt es sich um einen Signifikanztest, welcher prüft, ob die Varianzen innerhalb von zwei oder mehr Grundgesamtheiten (Gruppen) gleich sind (H0). Daraus ergibt sich die Alternativhypothese (H1), dass mindestens ein Gruppenpaar ungleiche Varianzen besitzt. Befindet sich der p-Wert unterhalb  eines zuvor definierten Signifikanzniveaus sind die Unterschiede in den Varianzen der unterschiedlichen Stichproben signifikant. Folglich kann die Nullhypothese des Tests abgelehnt werden und es kann angenommen werden, dass die Varianzen ungleich sind. Für die Auswertung wurde ein übliches Signifikanzniveau von 5 \% gewählt.
 
-% HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 \subsubsection{Überprüfung mittels t-Test}
 
 \paragraph{Hypothese 1 }
@@ -57,15 +45,15 @@ Die aufgestellten Hypothesen werden durch einen t-Test und eine einfaktorielle  
     \textit{Probanden, die Abzeichen erhalten (EB), beantworten im Mittel eine höhere Anzahl an Fragen als eine Kontrollgruppe ohne Abzeichen (KG).} 
 \end{center}
 
-
-Die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Abzeichen' und Probanden der Kontrollgruppe ohne Spielelemente ist nicht signifikant ($t (160) = -1.1181;\: p = 0.867$). Die Hypothese kann damit nicht bestätigt werden. Aus diesem Grund wurden zusätzlich zwei abgewandelte Hypothesen getestet, um ein tiefergehendes Verständnis der Daten zu erlangen:
+Der Levene-Test für die Anzahl an beantworteten Fragen ergibt mit  p = .318 kein  statistisch  signifikantes  Ergebnis (Leven-Statistik = 1.0044). Bei der folgenden Untersuchung kann daher von Varianzhomogenität ausgegangen werden. Es ist keine Korrektur der Ergebnisse erforderlich. Die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Abzeichen' und Probanden der Kontrollgruppe ohne Spielelemente ist nicht signifikant (t(160) = -1.1181; p = .867). Die Hypothese kann damit nicht bestätigt werden. Daher wurde die ursprüngliche Hypothese abgewandelt und es wurden die folgenden Hypothesen aufgestellt:
 
 \begin{itemize}
     \item \textbf{1.A:} \textit{Probanden, die Abzeichen erhalten (EB), verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe (KG) ohne Spielelemente.}
     \item \textbf{1.B:} \textit{Probanden, die Abzeichen erhalten (EB), benutzen durchschnittlich mehr Befehle als eine Kontrollgruppe (KG) ohne Spielemente.} 
 \end{itemize}
 
-Die Ergebnisse des t-Tests für die drei Hypothesen sind in Tabelle \ref{ttest_hypo_1} dargestellt. Der p-Wert bleibt auch bei beiden Hypothesen deutlich oberhalb des Signifikanzniveaus. Folglich müssen beiden Hypothesen abgelehnt werden. Bei allen drei Hypothesen war die Signifikanz des Levene-Tests oberhalb des üblichen Grenzwertes von .05 (siehe Tabelle \ref{levene_hypo_1}). Damit kann angenommen werden, dass die Varianzen der beiden Stichproben gleich sind und Varianzhomogenität vorliegt. Entsprechend sind die Voraussetzungen für die Durchführung eines t-Tests formal erfüllt.
+Keine der zusätzlich aufgestellten Hypothesen hat einen auf dem 5\%-Niveau signifikanten p-Wert und es kann daher erneut angenommen werden, dass die Varianzen der einzelnen Gruppen gleich sind. Die Ergebnisse des entsprechenden Levene-Tests sind in Tabelle \ref{levene_hypo_1} dargestellt. Folglich kann der unkorrigierte t-Test (Student's t) angewendet werden. Ein Vergleich  der  Mittelwerte  der Gesamtspielzeit der Kontrollgruppe mit der Gruppe mit Abzeichen offenbart kein statistisch signifikantes Ergebnis (t(160) = 0.0196; p = .492). Auch die durchschnittliche Befehlanzahl unterscheidet sich nicht signifikant zwischen den beiden Bedingungen, t(160) = -0.5704 , p = .715. Somit kann weder Hypothese \textbf{H1} noch die abgewandelten Hypothesen \textbf{H1.A} und \textbf{H1.B} gestützt werden.
+
 
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 1 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
@@ -90,7 +78,7 @@ Die Ergebnisse des t-Tests für die drei Hypothesen sind in Tabelle \ref{ttest_h
 \centering
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
- \multicolumn{4}{|c|}{Zweistichproben-t-Test (Students's t)} \\
+ \multicolumn{4}{|c|}{Zweistichproben-t-Test (Student's t)} \\
  \hline
  & T &df & p \\
  \hline
@@ -110,14 +98,16 @@ Die Ergebnisse des t-Tests für die drei Hypothesen sind in Tabelle \ref{ttest_h
 \begin{center}
     \textit{Probanden, die eine Fortschrittsanzeige erhalten (EP), beantworten im Mittel eine höhere Anzahl an Fragen als eine Kontrollgruppe ohne Fortschrittsanzeige (KG).} 
 \end{center}
-Mit $t(150)=0.373$ und $p=0.355$ ist die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Fortschrittsanzeige' und Probanden der Kontrollgruppe erneut nicht signifikant. Damit kann Hypothese 2 nicht bestätigt werden. Die für Hypothese 1 abgewandelten Hypothesen wurden auch für die Versuchsbedingung 'Fortschrittsanzeige' aufgestellt: 
+
+Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varianzhomogenität in den Gruppen. Mit t(150) = 0.373 und p = .355 ist die Differenz der durchschnittlichen Anzahl beantworteter Fragen von Probanden der Experimentalbedingung 'Fortschrittsanzeige' und Probanden der Kontrollgruppe nicht signifikant. Die für Hypothese 1 abgewandelten Hypothesen wurden auch für die Versuchsbedingung 'Fortschrittsanzeige' aufgestellt: 
 
 \begin{itemize}
     \item \textbf{2.A:} \textit{Probanden, die eine Fortschrittsanzeige erhalten (EP), verbringen im Mittel mehr Zeit mit dem Experiment als eine Kontrollgruppe ohne Spielelemente (KG).}
     \item \textbf{2.B:} \textit{Probanden, die eine Fortschrittsanzeige erhalten (EP), benutzen durchschnittlich mehr Befehle als eine Kontrollgruppe ohne Spielelemente (KG).} 
 \end{itemize}
 
-Die Ergebnisse für die Hypothesen sind in Tabelle \ref{levene_hypo_2} dargestellt. Erneut ist kein Test signifikant und folglich kann keine Hypothese bestätigt werden. Mit $p\in\{.148, .258, .806\}$ ist die Varianzhomogenität für jede Hypothese geben und der t-Test darf verwendet werden.
+ Wie zuvor sind die Varianzen in den Gruppen gleich, da der Levene-Test für keine der beiden Hypothesen signifikant ist (siehe Tabelle \ref{levene_hypo_2}). Ein durchgeführter t-Test ergibt bei einem Vergleich  der  Mittelwerte  der Gesamtspielzeit der Kontrollgruppe mit der Gruppe mit Fortschrittsanzeige kein statistisch signifikantes Ergebnis (t(150) = 0.822; p = .794). Selbiges gilt für die Differenz der Mittelwerte der beiden Gruppen im Bezug zu der Anzahl genutzter Befehle. Der entsprechende t-Test ist p = .137 nicht signifikant. Damit können Hypothese \textbf{H2} und die daraus abgeleiteten Hypothesen \textbf{H2.A} und \textbf{H2.B} nicht durch einen t-Test gestützt werden.
+
 
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
@@ -137,18 +127,19 @@ Die Ergebnisse für die Hypothesen sind in Tabelle \ref{levene_hypo_2} dargestel
 \label{levene_hypo_2}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ TEST - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
- \multicolumn{4}{|c|}{Zweistichproben-t-Test (Students's t)} \\
+ \multicolumn{4}{|c|}{Zweistichproben-t-Test (Student's t)} \\
  \hline
  & T &df & p \\
  \hline
-  Befehlanzahl       & 1.099   &   150 & 0.137\\
-  Gesamtspielzeit    & 0.822   &   150 & 0.206\\
-  Gelöste Aufgaben   & 0.373   &   150 & 0.355\\
+  Befehlanzahl       & 1.099   &   150 & 0.863\\
+  Gesamtspielzeit    & 0.822   &   150 & 0.794\\
+  Gelöste Aufgaben   & 0.373   &   150 & 0.645\\
  \hline
 \end{tabular}
 \caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1). Anmerkung: $H_a:\: EP > KG$}
@@ -180,7 +171,7 @@ Zunächst gilt es erneut die Voraussetzung der Varianzhomogenität mittels Leven
 \label{levene_amova}
 \end{table}
 
-Mit $F(2,154) = 0.652$ und einer Signifikanz von $p=0.523$ gibt es keinen statisch signifikanten Unterschied der Gruppenmittelwerte hinsichtlich der Anzahl gelöster Aufgaben. Ein ähnliches Ergebnis liefert die ANOVA für die Gesamtspielzeit ($F(2, 156)=0.512$; $p=0.6$). Damit kann gezeigt werden, dass kein signifikanter Unterschied im Zusammenhang der Anzahl gelöster Aufgaben sowie der Gesamtspielzeit zwischen den einzelnen Versuchsbedingungen besteht. Folglich kann keine der aufgestellten Hypothesen gestützt werden.
+Mit $F(2,154) = 0.652$ und einer Signifikanz von $p=0.523$ gibt es keinen statisch signifikanten Unterschied der Gruppenmittelwerte hinsichtlich der Anzahl gelöster Aufgaben. Ein ähnliches Ergebnis liefert die ANOVA für die Gesamtspielzeit ($F(2, 156)=0.512$; $p=0.6$). Damit kann kein signifikanter Unterschied im Zusammenhang der Anzahl gelöster Aufgaben sowie der Gesamtspielzeit zwischen den einzelnen Versuchsbedingungen gezeigt werden. Folglich kann keine der aufgestellten Hypothesen gestützt werden.
 
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 
