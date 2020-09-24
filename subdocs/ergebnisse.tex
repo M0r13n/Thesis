@@ -18,7 +18,7 @@ Im Mittel verbrachten die Teilnehmer 527 Sekunden (Standardabweichung 1588) mit 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{img/auswertung/mean_subs.png}
-    \caption{Mittelwerte für die Gesamtzahl abgesetzter Befehle. EB= Experimentalbedingung Abzeichen, KG= Kontrollgruppe und EP = Experimentalbedingung Fortschrittsanzeige.}
+    \caption{Mittelwerte der Gesamtzahl abgesetzter Befehle für die unterschiedlichen Versuchsbedingungen.}
     \label{mean_subs}
 \end{figure}
 
@@ -28,7 +28,7 @@ Die Kontrollgruppe nutze mit durchschnittlich 19.8 Befehlen die meisten Kommando
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{img/auswertung/mean_time.png}
-    \caption{Mittelwerte für die Gesamtzeit, die die Teilnehmer in das Experiment investierten. EB= Experimentalbedingung Abzeichen, KG= Kontrollgruppe und EP = Experimentalbedingung Fortschrittsanzeige.}
+    \caption{Mittlere Gesamtspielzeit, die die unterschiedlichen Versuchsbedingungen in das Experiment investierten.}
     \label{mean_time}
 \end{figure}
 
@@ -59,6 +59,7 @@ Keine der zusätzlich aufgestellten Hypothesen hat einen auf dem 5\%-Niveau sign
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 1 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
+\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Abzeichen und die Kontrollgruppe (Hypothese 1).}
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
  \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
@@ -69,14 +70,18 @@ Keine der zusätzlich aufgestellten Hypothesen hat einen auf dem 5\%-Niveau sign
   Gesamtspielzeit   & 0.1097    & 1 &   160 & 0.741\\
   Gelöste Aufgaben  & 1.0044    & 1 &   160 & 0.318\\
  \hline
+ \multicolumn{5}{l}{%
+ \small%
+\textit{Anmerkungen}: Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet
+}\\
 \end{tabular}
-\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Abzeichen und die Kontrollgruppe (Hypothese 1). Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
 \label{levene_hypo_1}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ TEST - HYPO 1 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
+\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1).}
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
  \multicolumn{4}{|c|}{Zweistichproben-t-Test (Student's t)} \\
@@ -87,8 +92,11 @@ Keine der zusätzlich aufgestellten Hypothesen hat einen auf dem 5\%-Niveau sign
   Gesamtspielzeit    &  0.0196  &   160 & 0.492\\
   Gelöste Aufgaben   & -1.1181  &   160 & 0.867\\
  \hline
+ \multicolumn{4}{l}{%
+ \small%
+\textit{Anmerkungen}: $H_a:\: EB > KG$
+}\\
 \end{tabular}
-\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1). Anmerkung: $H_a:\: EB > KG$}
 \label{ttest_hypo_1}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
@@ -113,6 +121,7 @@ Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varian
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
+\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Fortschrittsanzeige und die Kontrollgruppe (Hypothese 2).}
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
  \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
@@ -123,8 +132,11 @@ Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varian
   Gesamtspielzeit   & 1.2906     & 1 &   150 & 0.258\\
   Gelöste Aufgaben  & 0.0607     & 1 &   150 & 0.806\\
  \hline
+  \multicolumn{5}{l}{%
+ \small%
+\textit{Anmerkungen}: Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet
+}\\
 \end{tabular}
-\caption{Levene-Test auf Varianzhomogenität für die Experimentalbedingung Fortschrittsanzeige (Hypothese 2). Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
 \label{levene_hypo_2}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
@@ -132,6 +144,7 @@ Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varian
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ TEST - HYPO 2 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
+\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1).}
 \begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}| }
  \hline
  \multicolumn{4}{|c|}{Zweistichproben-t-Test (Student's t)} \\
@@ -142,8 +155,11 @@ Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varian
   Gesamtspielzeit    & 0.822   &   150 & 0.794\\
   Gelöste Aufgaben   & 0.373   &   150 & 0.645\\
  \hline
+ \multicolumn{4}{l}{%
+ \small%
+\textit{Anmerkungen}: $H_a:\: EP > KG$
+}\\
 \end{tabular}
-\caption{Zweistichproben-t-Test für die Experimentalbedingung Abzeichen und Kontrollgruppe (Hypothese 1). Anmerkung: $H_a:\: EP > KG$}
 \label{ttest_hypo_2}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
@@ -179,12 +195,12 @@ Gruppe 2 setzt sich aus überwiegend männlichen Teilnehmern mittleren Alters zu
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ Vergleich Demographie ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 \begin{table}[htbp]
 \centering
+\caption{Vergleich Demographie zwischen Gruppe 1 und Gruppe 2}
 \begin{tabular}{ |p{6cm}||p{3cm}|p{3cm}| }
- \hline
- \multicolumn{3}{|c|}{Vergleich Demographie zwischen Gruppe 1 und Gruppe 2} \\
- \hline
+  \hline
   Merkmal & Gruppe 1 & Gruppe 2 \\
-  Umfang & 121  & 123 \\
+  \hline
+  Umfang (absolut) & 121  & 123 \\
   \hline
   \multicolumn{3}{|c|}{Geschlecht} \\
   \hline
@@ -216,7 +232,6 @@ Gruppe 2 setzt sich aus überwiegend männlichen Teilnehmern mittleren Alters zu
   Nie                           & 7.4  \%       & 8.1  \%       \\
   \hline
 \end{tabular}
-\caption{Vergleich Demographie zwischen Gruppe 1 und Gruppe 2. Die jeweiligen Merkmale sind als prozentualer Anteil des Gesamtumfangs der jeweiligen Gruppe angegeben. }
 \label{demo_g12}
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
@@ -259,6 +274,7 @@ Zusammengefasst lässt sich sagen, dass sich die Ergebnisse in der zweiten Stich
 
 \begin{table}[htbp]
 \centering
+\caption{Gegenüberstellung der Gesamtspielzeit, Anzahl genutzter Befehle und Aufgabenanzahl zwischen Gruppe 1 und Gruppe 2.}
 \begin{tabular}{ p{3.5cm} | p{0.75cm} | p{1cm} p{1cm}  p{1cm} || p{1cm} p{1cm} p{1cm}}
  \hline
  \multicolumn{8}{c}{Vergleich Gruppe 1 und Gruppe 2} \\
@@ -286,8 +302,11 @@ Zusammengefasst lässt sich sagen, dass sich die Ergebnisse in der zweiten Stich
 
   
  \hline
+ \multicolumn{3}{l}{%
+ \small%
+\textit{Anmerkungen}: Extreme Ausreißer werden nicht berücksichtigt.
+}\\
 \end{tabular}
-\caption{Gegenüberstellung der Gesamtspielzeit, Anzahl genutzter Befehle und Aufgabenanzahl zwischen Gruppe 1 und Gruppe 2. Extreme Ausreißer wurden nicht berücksichtigt.}
 \label{final}
 \end{table}
 
@@ -296,7 +315,8 @@ Zusammengefasst lässt sich sagen, dass sich die Ergebnisse in der zweiten Stich
 Wurden alle Fragen korrekt beantwortet, wurden die Teilnehmer gebeten, Feedback hinsichtlich der empfundenen Motivation zu geben. Von 18 Teilnehmern, die das Experiment beendeten, gaben 17 eine entsprechende Rückmeldung ab. Wie in Tabelle \ref{feedback} zu sehen, gab über die Hälfte der Teilnehmer an, tendenziell motiviert gewesen zu sein. Lediglich drei Teilnehmer gaben an, sich eher nicht motiviert gefühlt zu haben. Aufgrund des geringen Umfangs der Stichprobe kann keine statistisch belastbare Aussage auf Basis des Feedbacks getroffen werden. Jedoch kann angenommen werden, dass sich Teilnehmer, die das Experiment beendeten, tendenziell motiviert fühlten.
 
 \begin{table}[htbp]
-\centering
+%\centering
+\caption{Tabellarische Darstellung des finalen Feedbacks der Probanden.}
 \begin{tabular}{ p{4cm} |  p{2cm}}
  Feedback & Anzahl \\
  \hline
@@ -307,6 +327,5 @@ Wurden alle Fragen korrekt beantwortet, wurden die Teilnehmer gebeten, Feedback 
  trifft nicht zu & 0 \\
  \hline
 \end{tabular}
-\caption{Tabellarische Darstellung des finalen Feedbacks der Probanden auf die Frage: "Ich fühlte mich während des Experiments motiviert."}
 \label{feedback}
 \end{table}
