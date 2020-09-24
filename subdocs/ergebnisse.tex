@@ -32,7 +32,8 @@ Die Kontrollgruppe nutze mit durchschnittlich 19.8 Befehlen die meisten Kommando
     \label{mean_time}
 \end{figure}
 
-Betrachtet man die Zeit, die die Teilnehmer im Mittel in das Experiment investiert haben, fällt auf, dass die Teilnehmer der Versuchsbedingung 'Abzeichen' mit 654 Sekunden (Standardabweichung 2190) deutlich mehr Zeit als die Kontrollgruppe ( 447 Sekunden; Standardabweichung 1161 Sekunden) investierten. Letztere hat wiederum mehr Zeit investiert, als die Probanden der Versuchsbedingung 'Fortschrittsanzeige'. Diese brachten 330 Sekunden (Standardabweichung 740) für das Experiment auf. Die entsprechenden Mittelwerte sind in Abbildung \ref{mean_time} dargestellt. Erneut zeigt sich eine, durch das große Streuungsintervall (siehe auch Abbildung \ref{mean_time}) induzierte, Verzerrung der Mittelwerte. Die jeweiligen Mediane der unterschiedlichen Bedingungen liegen deutlich näher beieinander, als es der Durchschnitt erwarten lässt. Der Median der Kontrollgruppe ist am höchsten (136). während Fortschrittsanzeige und Abzeichen im Median weniger Zeit investierten (EB = 109; EP=116).
+Betrachtet man die Zeit, die die Teilnehmer im Mittel in das Experiment investiert haben, fällt auf, dass die Teilnehmer der Versuchsbedingung 'Abzeichen' mit 654 Sekunden (Standardabweichung 2190) deutlich mehr Zeit als die Kontrollgruppe ( 447 Sekunden; Standardabweichung 1161 Sekunden) investierten. Letztere hat wiederum mehr Zeit investiert, als die Probanden der Versuchsbedingung 'Fortschrittsanzeige'. Diese brachten 330 Sekunden (Standardabweichung 740) für das Experiment auf. Die entsprechenden Mittelwerte sind in Abbildung \ref{mean_time} dargestellt. Erneut zeigt sich eine, durch das große Streuungsintervall (siehe auch Abbildung \ref{mean_time}) induzierte, Verzerrung der Mittelwerte. Die jeweiligen Mediane der unterschiedlichen Bedingungen liegen deutlich näher beieinander, als es der Durchschnitt erwarten lässt. Der Median der Kontrollgruppe ist am höchsten (136). während Fortschrittsanzeige und Abzeichen im Median weniger Zeit investierten (EB = 109; EP=116). Bemerkenswert ist die hohe Abbruchquote in den ersten 30 Sekunden: 83 Teilnehmer (31 \%) haben eine Gesamtspielzeit von unter einer halben Minute.
+
 Aufgrund der hohen Diskrepanz zwischen Median und Mittelwert sowie der hohen Standardabweichung wurden extreme Ausreißer aus der weiteren Betrachtung ausgeschlossen. Bei diesen Ausreißern gehe ich davon aus, dass eine, von den Spielelementen unabhängige, Intrinsische Motivation vorliegt. Als Grenzwert wählte ich die zweifache Standardabweichung ($\pm 2\sigma$). Dies führt dazu, dass sämtliche Teilnehmer mit mehr als 3537 Sekunden Spieldauer aus dem Datensatz ausgeschlossen werden. Zusätzlich werden nur Teilnehmer berücksichtigt, die mindestens einen Befehl verwendet haben. Der so entstandene Datensatz hat einen Umfang von 240 (-26).
 
 \subsection{Hypothesenüberprüfung}\label{hypo}
@@ -147,31 +148,17 @@ Ein durchgeführter Levene-Test bestätigt mit p = .806 die Vermutung der Varian
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 
+
+
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ ANOVA ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
+
+
 \subsubsection{Überprüfung mittels ANOVA Varianzanalyse }
-Bei der ANOVA (engl. \textit{Analysis of Variance}) handelt es sich um eine Varianzanalyse, die die Mittelwerte von mehr als 2 Gruppen vergleichbar macht. Dabei handelt es sich um eine Erweiterung des t-Tests, welcher auf den Vergleich von maximal 2 Stichproben beschenkt ist. Dies ermöglicht mir den Vergleich aller drei Versuchsbedingungen. Nachfolgend werden die zwei abhängigen Variablen \textbf{Gelöste Aufgaben} und \textbf{Gesamtspielzeit} jeweils durch eine einfaktorielle Varianzanalyse untersucht.
+Bei der ANOVA (engl. \textit{Analysis of Variance}) handelt es sich um eine Varianzanalyse, die die Mittelwerte von mehr als 2 Gruppen vergleichbar macht. Dabei handelt es sich um eine Erweiterung des t-Tests, welcher auf den Vergleich von maximal 2 Stichproben beschenkt ist. Dies ermöglicht den Vergleich aller drei Versuchsbedingungen. Nachfolgend werden die zwei abhängigen Variablen \textbf{Gelöste Aufgaben} und \textbf{Gesamtspielzeit} jeweils durch eine einfaktorielle Varianzanalyse untersucht.
 
 % Varianzhomogenität prüfen 
-Zunächst gilt es erneut die Voraussetzung der Varianzhomogenität mittels Levene-Test zu prüfen. Wie in Tabelle \ref{levene_amova} zu sehen, ist die Signifikanz deutlich oberhalb der Signifianzniveaus ($p\in \{.606, .288\}$) und bestätigt die Varianzgleichheit.
+Da ein Levene-Test sowohl für die Anzahl der gelösten Aufgaben (p = .606) als auch für die Gesamtspielzeit (p = .288) kein signifikantes Ergebnis ergibt, kann von Varianzhomogenität in den Gruppen ausgegangen werden. Eine nachträgliche Korrektur der Ergebnisse ist entsprechend nicht erforderlich. Die Varianzanalyse zeigt keinen statistisch signifikanten Unterschied im Zusammenhang der gelösten Aufgaben zwischen den einzelnen Versuchsbedingungen, F (2.237) = 0.626; p = .536. Selbiges gilt für die Gesamtspielzeit: Die Varianzanalyse zeigt zudem keinen statistisch  signifikanten Unterschied zwischen den einzelnen Versuchsbedinungen hinsichtlich der Spielzeit,  F(2.237) = 0.453, p = .636.
 
-% ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ LEVENE - ANOVA ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
-\begin{table}[htbp]
-\centering
-\begin{tabular}{ |p{4cm}||p{2.0cm}|p{2.0cm}|p{2.0cm}|p{2.0cm}| }
- \hline
- \multicolumn{5}{|c|}{Test auf Varianzhomogenität (Levene's)} \\
- \hline
- & F & df1 &df2 &p \\
- \hline
-  Gelöste Aufgaben      & 0.503     & 2 &   237 & 0.606\\
-  Gesamtspielzeit       & 1.252     & 2 &   237 & 0.288\\
- \hline
-\end{tabular}
-\caption{Levene-Test auf Varianzhomogenität für EB, KG, EP. Auf dem 5\%-Niveau signifikante p-Werte sind durch ein * gekennzeichnet}
-\label{levene_amova}
-\end{table}
-
-Mit $F(2,154) = 0.652$ und einer Signifikanz von $p=0.523$ gibt es keinen statisch signifikanten Unterschied der Gruppenmittelwerte hinsichtlich der Anzahl gelöster Aufgaben. Ein ähnliches Ergebnis liefert die ANOVA für die Gesamtspielzeit ($F(2, 156)=0.512$; $p=0.6$). Damit kann kein signifikanter Unterschied im Zusammenhang der Anzahl gelöster Aufgaben sowie der Gesamtspielzeit zwischen den einzelnen Versuchsbedingungen gezeigt werden. Folglich kann keine der aufgestellten Hypothesen gestützt werden.
 
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 
@@ -183,7 +170,7 @@ Die geschilderten Ergebnisse entsprechen nicht meinen ursprünglichen Erwartunge
 Um die Daten besser zu verstehen und um die Ergebnisse erklärbar zu machen, habe ich die Daten ausführlicher untersucht: Der Verlauf des Experiments kann zeitlich in zwei Abschnitte unterteilt werden (siehe Abschnitt \ref{beschreibung}). Da anzunehmen ist, dass ab dem 06.09.2020 sehr versierte Teilnehmer, die bereits Erfahrung mit der Kommandozeile haben, an dem Experiment teilnahmen, habe ich beschlossen, das Experiment zeitlich in zwei disjunkte Abschnitte zu unterteilen. Dazu teilte ich den Datensatz in einen Abschnitt vor dem 06.09.2020 und einen Abschnitt ab dem 06.09.2020. Der erste Abschnitt besteht damit aus Teilnehmern, die bis zum 05.09.2020 um 23:59:59 an dem Experiment teilgenommen haben, und wird nachfolgend als \textbf{Gruppe 1} bezeichnet. Entsprechend setzt sich die andere Hälfte aus Teilnehmern zusammen, die nach dem 06.09.2020 00:00 Uhr teilnahmen, und wird als \textbf{Gruppe 2} bezeichnet. Teilnehmer ohne Interaktion (keine abgeschickten Befehle) werden erneut nicht berücksichtigt.
 
 \subsubsection{Weiterführende Analyse - Zusammensetzung der Gruppen}
-Zunächst habe ich demographischen Daten der beiden Gruppen verglichen. Die vollständige Gegenüberstellung ist in Tabelle \ref{demo_g12} dargestellt. Beide Stichproben setzen sich zu einem Großteil aus männlichen Probanden zusammen (> 80 \%). Der Anteil von weiblicher und diverser Teilnehmer ist zwischen den Gruppen vertauscht. So sind in Gruppe 1 12.5 \% weiblich und 5.8\% divers, während in Gruppe 2 5.7 \% weiblich und 13.8\% divers sind. Gruppe 1 verfügt durchschnittlich über weniger gute Englisch Kenntnisse als Gruppe 2 (34.7 \% sehr gut vs 52.0 \% sehr gut). Gleichzeitig ist der Altersdurchschnitt in Gruppe 2 höher als in Gruppe 1. So ist der Großteil der Probanden aus Gruppe 2 zwischen 20 und 39 Jahre alt (39.0 \%). Demgegenüber gaben die Teilnehmer der ersten Gruppe überwiegend ein Alter zwischen 18 und 29 Jahren an (48.8\%). Die Probanden aus Gruppe 2 nutzen die Kommandozeile zudem deutlich häufiger. Beispielsweise nutzen 65.9 \% der Probanden aus Gruppe 2 das Terminal täglich, während dies in Gruppe 1 lediglich 28.9 \% sind. Damit ergeben sich die folgenden Profile für den jeweiligen Versuchsabschnitt:
+Zunächst wurden die demographischen Daten der beiden Gruppen miteinander verglichen. Die vollständige Gegenüberstellung ist in Tabelle \ref{demo_g12} dargestellt. Beide Stichproben setzen sich zu einem Großteil aus männlichen Probanden zusammen (> 80 \%). Der Anteil weiblicher und diverser Teilnehmer ist zwischen den Gruppen nahezu invers. So sind in Gruppe 1 12.5 \% weiblich und 5.8\% divers, während in Gruppe 2 5.7 \% weiblich und 13.8\% divers sind. Gruppe 1 verfügt durchschnittlich über weniger gute Englisch Kenntnisse als Gruppe 2 (34.7 \% sehr gut vs 52.0 \% sehr gut). Gleichzeitig ist der Altersdurchschnitt in Gruppe 2 höher als in Gruppe 1. So ist der Großteil der Probanden aus Gruppe 2 zwischen 20 und 39 Jahre alt (39.0 \%). Demgegenüber gaben die Teilnehmer der ersten Gruppe überwiegend ein Alter zwischen 18 und 29 Jahren an (48.8\%). Die Probanden aus Gruppe 2 nutzen die Kommandozeile zudem deutlich häufiger. Beispielsweise nutzen 65.9 \% der Probanden aus Gruppe 2 das Terminal täglich, während dies in Gruppe 1 lediglich 28.9 \% sind. Damit ergeben sich die folgenden Profile für den jeweiligen Versuchsabschnitt:
 
 Gruppe 1 setzt sich aus jungen, überwiegend männlichen Teilnehmern zusammen, die über gute Englischkenntnisse verfügen und bereits erste Erfahrungen mit der Kommandozeile haben. 
 
@@ -234,6 +221,8 @@ Gruppe 2 setzt sich aus überwiegend männlichen Teilnehmern mittleren Alters zu
 \end{table}
 % ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~ END ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~
 
+\subsubsection{Weiterführende Analyse - Hypothesenprüfung}
+
 
 Im folgenden Abschnitt wurden die beiden Gruppen gesondert untersucht und analysiert. Wie zuvor wurden extreme Ausreißer sowie Teilnehmer ohne Interaktion (keinen Befehl gesendet) aus den Datensätzen eliminiert. In der Stichprobe, die bis zum 06.09.2020 zu Stande gekommen ist, liegt der Grenzwert der Spielzeit bei 5089 Sekunden ($\bar{x}\pm 2\sigma = 727 + 2*2181 = 5089 s$ ). Teilnehmer, deren Gesamtspielzeit diesen Grenzwert übersteigt, wurden nachfolgend nicht berücksichtigt. Der so entstandene Datensatz hat einen Umfang von 117 Personen. Der entsprechende Schwellwert lag im Fall der zweiten Gruppe bei 1360 Sekunden ($\bar{x}\pm 2\sigma = 330 + 2*515 = 1360 s$ ). Dies führte zu einer Stichprobengröße von 116 Personen. Ziel war es, meine aufgestellten und in Abschnitt \ref{hypo} angepassten Hypothesen für die jeweilige Gruppe zu prüfen. Es wurden für jede Gruppe folgende Hypothesen geprüft:
 
@@ -248,7 +237,7 @@ Im folgenden Abschnitt wurden die beiden Gruppen gesondert untersucht und analys
 Die Experimentalbedingung Abzeichen unterschied sich mit $ t(71)=-0.325 $ und $p=0.746$ nicht signifikant von der Kontrollgruppe hinsichtlich der absoluten Anzahl genutzter Befehle. Auch die durchschnittliche Spielzeit zwischen Personen, die ein Abzeichen erhielten, und der Kontrollgruppe unterschied sich nicht signifikant ($t(71)=-0.396; p=0.696$). Selbiges gilt für die Aufgabenzahl. Das Spielelement Abzeichen führte zu keinem signifikanten Unterschied der beantworteten Fragen ( $ t(71)=-1.510; p=0.135 $ ). Damit kann keine Hypothese bestätigt werden und es kann innerhalb der ersten Stichprobe nicht von einem motivierenden Effekt des Abzeichens ausgegangen werden.
 
 \paragraph{Gruppe 2}
-Es konnte bei der zweiten Gruppe kein motivierender Einfluss durch ein Abzeichen beobachtet werden. Weder die Anzahl der genutzten Befehle ( $ t(82)=-0.4926; p=0.624 $ ) noch die Gesamtspielzeit ($t(82)=-0.0767; p=0.939$) oder die gelösten Aufgaben ( $t(82)=-0.3709; p=0.712$ ) unterschied sich signifikant. Daher kann erneut keine Hypothese bestätigt werden und es muss davon ausgegangen werden, dass Teilnehmer aus der zweiten Stichprobe nicht durch Abzeichen motiviert wurden. 
+Es konnte bei der zweiten Gruppe kein motivierender Einfluss durch ein Abzeichen beobachtet werden. Weder die Anzahl der genutzten Befehle ( $ t(82)=-0.4926; p=0.624 $ ) noch die Gesamtspielzeit ($t(82)=-0.0767; p=0.939$) oder die gelösten Aufgaben ( $t(82)=-0.3709; p=0.712$ ) unterschied sich signifikant. Daher kann erneut keine Hypothese bestätigt werden und es kann nicht davon ausgegangen werden, dass Teilnehmer aus der zweiten Stichprobe durch Abzeichen motiviert wurden. 
 
 
 \paragraph{Hypothese 2}
@@ -259,11 +248,11 @@ Es konnte bei der zweiten Gruppe kein motivierender Einfluss durch ein Abzeichen
 \end{itemize}
 
 \paragraph{Gruppe 1}
-Bei einem Vergleich der Experimentalbedingung Fortschrittsanzeige und der Kontrollgruppe lag Varianzheterogenität vor (Levene-Tests: $p\in\{.004, .030, .003\}$). Daher wurde ein Welch-Test durchgeführt. Die durchschnittliche Spielzeit von der Experimentalbedingung ($\bar{x}=248 s $) unterschied sich messbar von der Kontrollgruppe ($\bar{x}=481 s$). Jedoch war der Unterschied statisch nicht signifikant ($t(50)=1.45; p=.154$). Auch die Differenz genutzter Befehle von Experimentalbedingung und Kontrollgruppe war nicht signifikant($t(40.5)=1.9; p=.065$). Die durchschnittliche Anzahl gelöster Aufgaben war in der Stichprobe mit Fortschrittsanzeige ($\bar{x}=3$) niedriger als in der Kontrollgruppe ($\bar{x}= 4.73$). Der Differenz war signifikant: $t(47.2)=2, p=.05$. Dies führt dazu, dass keine Hypothese bestätigt werden kann. Stattdessen konnte gezeigt werden, dass Probanden der Experimentalbedingung 'Fortschrittsanzeige' (EP) weniger Aufgaben lösten als die Kontrollgruppe. 
+Bei einem Vergleich der Experimentalbedingung Fortschrittsanzeige und der Kontrollgruppe lag Varianzheterogenität vor (Levene-Tests: $p\in\{.004, .030, .003\}$). Daher wurde ein Welch-Test durchgeführt. Die durchschnittliche Spielzeit von der Experimentalbedingung (M = 248) unterschied sich messbar von der Kontrollgruppe (M = 481). Jedoch war der Unterschied statisch nicht signifikant, t(50) = 1.45; p = .15. Auch die Differenz genutzter Befehle von Experimentalbedingung und Kontrollgruppe war nicht signifikant, t(40.5)=1.9; p=.065. Die durchschnittliche Anzahl gelöster Aufgaben war in der Stichprobe mit Fortschrittsanzeige (M = 3) niedriger als in der Kontrollgruppe (M = 4.73). Der Differenz war signifikant: t(47.2) = 2, p = .05. Dies führt dazu, dass keine Hypothese bestätigt werden kann. Stattdessen kann gezeigt werden, dass Probanden der Experimentalbedingung 'Fortschrittsanzeige' (EP) weniger Aufgaben lösten als die Kontrollgruppe. 
 
 
 \paragraph{Gruppe 2}
-Teilnehmer, die eine animierte Fortschrittsanzeige angezeigt bekamen, investierten durchschnittlich 274 Sekunden in das Experiment und nutzen durchschnittlich 23.25 Befehle. Die Kontrollgruppe investierte vergleichsweise wenig Zeit ($ \bar{x} = 202s $ ) in den Versuch und nutze ebenfalls weniger Befehle ($ \bar{x} = 18.07 $). Ein t-Test ergab, dass die Differenz der gelösten Aufgaben statistisch signifikant ist ($t(72)=-2.16, p=.034$) und stützt meine Hypothese \textbf{2.C}. Demgegenüber sind mit $ p=.217 $ und $p=.185$ die Unterschiede der Spielzeit und Befehlsanzahl messbar jedoch nicht signifikant.
+Teilnehmer, die eine animierte Fortschrittsanzeige angezeigt bekamen, investierten durchschnittlich 274 Sekunden in das Experiment und nutzen durchschnittlich 23.25 Befehle. Die Kontrollgruppe investierte vergleichsweise wenig Zeit (M = 202) in den Versuch und nutze ebenfalls weniger Befehle (M = 18.07 ). Ein t-Test ergab, dass die Differenz der gelösten Aufgaben statistisch signifikant ist, t(72) = -2.16, p=.034, und stützt Hypothese \textbf{2.C}. Demgegenüber sind mit p = .217 und p = .185 die Unterschiede der Spielzeit und Befehlsanzahl nicht signifikant.\\
  
 Zusammengefasst lässt sich sagen, dass sich die Ergebnisse in der zweiten Stichprobe im wesentlichen mit einen Erwartungen decken. Die Ergebnisse der ersten Gruppe hingegen weichen deutlich von meinen ursprünglichen Hypothesen ab. Die Unterschiede zwischen den zwei Stichproben sind dabei stellenweise extrem. So zeigt eine Fortschrittsanzeige in beiden Stichproben einen deutlichen Effekt auf das Durchhaltevermögen der Teilnehmer: In Gruppe 1 muss von einem demotivierendem Effekt der Fortschrittsanzeige ausgegangen werden, während in Gruppe 2 ein motivierender Effekt zu beobachten war. In beiden Fällen handelt es sich dabei um eine statisch signifikante Differenz. Generell weichen die Daten der Gruppen deutlich voneinander ab. Eine entsprechende Gegenüberstellung findet sich in Tabelle \ref{final}. Besonders auffällig sind die deutlich höheren maximalen Spielzeiten in Gruppe 1 gegenüber Gruppe 2. Personen der ersten Stichprobe investierten in jeder Versuchsbedingung im Maximum $\sim3$ Mal mehr Zeit für das Experiment, obwohl extreme Ausreißer nicht berücksichtigt wurden. Als Konsequenz sind die entsprechenden Standardabweichungen deutlich größer als die der zweiten Gruppe.
 
